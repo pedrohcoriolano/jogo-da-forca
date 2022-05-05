@@ -29,7 +29,7 @@ function numero_de_interrogacao(num, palavra) {
     for (var i = 0; i < num; i++) {
         imprimir.push('?')
     }
-    alert(imprimir);
+    alert(imprimir.join(""));
 
     tentativa(imprimir, palavra);
 }
@@ -53,7 +53,7 @@ function tentativa(imprimir, palavra) {
         
         if(validador == true && resp_usuario.length == 1 && letra_repetida != resp_usuario) {
             letra_repetida = resp_usuario
-            alert(imprimir);
+            alert(imprimir.join(""));
         } else {
             alert('letra não encontrada');
             vida--
